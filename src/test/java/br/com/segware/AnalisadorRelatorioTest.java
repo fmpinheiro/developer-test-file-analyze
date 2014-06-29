@@ -3,6 +3,8 @@ package br.com.segware;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
+import java.io.IOException;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +13,7 @@ public class AnalisadorRelatorioTest {
     IAnalisadorRelatorio analisador;
 
     @Before
-    public void before() {
+    public void before() throws IOException {
         // analisador = sua implementação
     }
 
@@ -27,12 +29,12 @@ public class AnalisadorRelatorioTest {
 
     @Test
     public void tempoMedioDeAtendimentoEmSegundosDoAtendenteAT01() {
-        assertEquals(163, analisador.getTempoMedioAtendimentoAtendente().get("AT01"), 0);
+        assertEquals(159, analisador.getTempoMedioAtendimentoAtendente().get("AT01"), 0);
     }
 
     @Test
     public void tempoMedioDeAtendimentoEmSegundosDoAtendenteAT02() {
-        assertEquals(123, analisador.getTempoMedioAtendimentoAtendente().get("AT02"), 0);
+        assertEquals(156, analisador.getTempoMedioAtendimentoAtendente().get("AT02"), 0);
     }
 
     @Test

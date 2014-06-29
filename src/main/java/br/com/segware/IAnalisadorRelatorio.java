@@ -30,7 +30,7 @@ public interface IAnalisadorRelatorio {
      *
      * @return O tempo medio de atendimento por atendente, em segundos.
      */
-    Map<String, Integer> getTempoMedioAtendimentoAtendente();
+    Map<String, Long> getTempoMedioAtendimentoAtendente();
 
     /**
      * Retorna uma lista de tipos, ordenado de forma decrescente pela quantidade de eventos.
