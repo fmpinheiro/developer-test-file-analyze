@@ -40,9 +40,10 @@ public interface IAnalisadorRelatorio {
     List<Tipo> getTiposOrdenadosNumerosEventosDecrescente();
 
     /**
-     * Retorna o codigo sequencial de um evento que tenha ocorrido o desarme apos alarme.<br/>
+     * Retorna o codigo sequencial de um evento de desarme que tenha ocorrido apos alarme.<br/>
      * Importante notar que este tipo de evento so pode ser considerado quando o desarme ocorrer em ate 5 minutos apos o alarme.<br/>
-     * Caso tenha excedido este periodo, nao devera ser reportado.
+     * Caso tenha excedido este periodo, nao devera ser reportado.<br/>
+     * O tempo a ser considerado e sempre com base na data/hora inicial dos eventos comparados.
      *
      * @return Lista de codigos sequenciais de eventos com desarme apos o alarme.
      */
