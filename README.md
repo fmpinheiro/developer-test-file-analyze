@@ -1,27 +1,27 @@
-Teste para Avaliação de Desenvolvedor
+Developer test
 ======================
 
-## Considerações Iniciais
+## Initial considerations
 
-A avaliação consiste em fazer a leitura de um arquivo para extrair algumas estatísticas.
+The test consists in reading a file and generate some statistics.
 
-Deverá ser desenvolvida uma implementação da interface IAnalisadorRelatorio, para que os testes presentes em AnalisadorRelatorioTest possam ser executados.
+You should implement IReportAnalyze interface, so ReportAnalyzeTest tests can pass.
 
-A avaliação estará concluída quando todos os testes passarem.
+The test is done when all tests passes.
 
-Maiores informações sobre o que deve ser desenvolvido estão no javadoc da própria interface.
+More information about what should be done are in interface's javadoc.
 
-## Formato do Arquivo
+## File format
 
-O arquivo terá o formato abaixo:
-
-```
-codigo sequencial,codigo do cliente,codigo do Evento,tipo do evento,data inicio,data fim,codigo do antendente
-```
-
-Ex:
+The file format is:
 
 ```
-1,0001,E130,ALARME,2014-06-25 12:00:00,2014-06-25 12:05:32,AT01
-2,0002,E131,ARME,2014-06-25 12:01:03,2014-06-25 12:05:36,AT02
+sequential code,customer code, event code,event type,start date,end date,person id
+```
+
+Example:
+
+```
+1,0001,E130,ALARM,2014-06-25 12:00:00,2014-06-25 12:05:32,AT01
+2,0002,E131,ARM,2014-06-25 12:01:03,2014-06-25 12:05:36,AT02
 ```
